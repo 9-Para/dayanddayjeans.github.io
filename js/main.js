@@ -7,40 +7,27 @@
     Created: Colorlib
 ---------------------------------------------------------  */
 
-'use strict';
+"use strict";
 
 (function ($) {
-
-    /*------------------
+  /*------------------
         Preloader
     --------------------*/
-    $(window).on('load', function () {
-        $(".loader").fadeOut();
-        $("#preloder").delay(200).fadeOut("slow");
-    });
+  $(window).on("load", function () {
+    $(".loader").fadeOut();
+    $("#preloder").delay(100).fadeOut("slow");
+    
+  });
 
-  
 
-    /*------------------
+
+   /*------------------
 		Navigation
 	--------------------*/
-    $(".mobile-menu").slicknav({
-        appendTo: '.header-section',
-        allowParentLinks: true,
-        closedSymbol: '<i class="fa fa-angle-right"></i>',
-		openedSymbol: '<i class="fa fa-angle-down"></i>'
-    });
-
-
-    /*------------------
-        Magnific Popup
-    --------------------*/
-    $('.pop-up').magnificPopup({
-        type: 'image'
-    });
-
-
-    
-   
-
+  $(".mobile-menu").slicknav({
+    appendTo: ".header-section",
+    allowParentLinks: true,
+    closedSymbol: '<i class="fa fa-angle-right"></i>',
+    openedSymbol: '<i class="fa fa-angle-down"></i>',
+  });
 })(jQuery);
